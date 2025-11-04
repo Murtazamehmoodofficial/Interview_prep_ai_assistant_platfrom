@@ -9,8 +9,8 @@ function initFirebaseAdmin() {
     if (!apps.length) {
         initializeApp({
             credential: cert({
-                projectId: process.env.FAIRBASE_PROJECT_ID,
-                clientEmail: process.env.FIREBASE_MESSAGEING_SENDER_ID,
+                projectId: process.env.FIREBASE_PROJECT_ID,
+                clientEmail: process.env.FIREBASE_CLIENT_EMAIL_ID,
                 // Replace newlines in the private key
                 privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
             }),
